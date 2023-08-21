@@ -2,7 +2,6 @@ import unittest
 
 
 class TestMathOps(unittest.TestCase):
-
     def test_math_ops(self):
         solution = Solution()
         self.assertRaises(TypeError, solution.insert, None)
@@ -21,7 +20,7 @@ class TestMathOps(unittest.TestCase):
         self.assertEqual(solution.min, 2)
         self.assertEqual(solution.mean, 5)
         self.assertTrue(solution.mode in (2, 9))
-        print('Success: test_math_ops')
+        print("Success: test_math_ops")
 
 
 def main():
@@ -29,5 +28,5 @@ def main():
     test.test_math_ops()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

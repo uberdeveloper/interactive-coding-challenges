@@ -2,7 +2,6 @@ import unittest
 
 
 class TestMoveZeroes(unittest.TestCase):
-
     def test_move_zeroes(self):
         solution = Solution()
         self.assertRaises(TypeError, solution.move_zeroes, None)
@@ -24,7 +23,7 @@ class TestMoveZeroes(unittest.TestCase):
         array = [1, 1]
         solution.move_zeroes(array)
         self.assertEqual(array, [1, 1])
-        print('Success: test_move_zeroes')
+        print("Success: test_move_zeroes")
 
 
 def main():
@@ -32,5 +31,5 @@ def main():
     test.test_move_zeroes()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

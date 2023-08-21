@@ -2,7 +2,6 @@ import unittest
 
 
 class TestDfs(unittest.TestCase):
-
     def __init__(self, *args, **kwargs):
         super(TestDfs, self).__init__()
         self.results = Results()
@@ -43,7 +42,7 @@ class TestDfs(unittest.TestCase):
         bst.post_order_traversal(bst.root, self.results.add_result)
         self.assertEqual(str(self.results), "[5, 4, 3, 2, 1]")
 
-        print('Success: test_dfs')
+        print("Success: test_dfs")
 
 
 def main():
@@ -51,5 +50,5 @@ def main():
     test.test_dfs()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

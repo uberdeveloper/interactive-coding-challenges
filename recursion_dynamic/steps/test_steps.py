@@ -2,7 +2,6 @@ import unittest
 
 
 class TestSteps(unittest.TestCase):
-
     def test_steps(self):
         steps = Steps()
         self.assertRaises(TypeError, steps.count_ways, None)
@@ -13,7 +12,7 @@ class TestSteps(unittest.TestCase):
         self.assertEqual(steps.count_ways(3), 4)
         self.assertEqual(steps.count_ways(4), 7)
         self.assertEqual(steps.count_ways(10), 274)
-        print('Success: test_steps')
+        print("Success: test_steps")
 
 
 def main():
@@ -21,5 +20,5 @@ def main():
     test.test_steps()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

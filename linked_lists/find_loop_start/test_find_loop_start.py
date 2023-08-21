@@ -2,26 +2,25 @@ import unittest
 
 
 class TestFindLoopStart(unittest.TestCase):
-
     def test_find_loop_start(self):
-        print('Test: Empty list')
+        print("Test: Empty list")
         linked_list = MyLinkedList()
         self.assertEqual(linked_list.find_loop_start(), None)
 
-        print('Test: Not a circular linked list: One element')
+        print("Test: Not a circular linked list: One element")
         head = Node(1)
         linked_list = MyLinkedList(head)
         self.assertEqual(linked_list.find_loop_start(), None)
 
-        print('Test: Not a circular linked list: Two elements')
+        print("Test: Not a circular linked list: Two elements")
         linked_list.append(2)
         self.assertEqual(linked_list.find_loop_start(), None)
 
-        print('Test: Not a circular linked list: Three or more elements')
+        print("Test: Not a circular linked list: Three or more elements")
         linked_list.append(3)
         self.assertEqual(linked_list.find_loop_start(), None)
 
-        print('Test: General case: Circular linked list')
+        print("Test: General case: Circular linked list")
         node10 = Node(10)
         node9 = Node(9, node10)
         node8 = Node(8, node9)
@@ -37,7 +36,7 @@ class TestFindLoopStart(unittest.TestCase):
         linked_list = MyLinkedList(node0)
         self.assertEqual(linked_list.find_loop_start(), node3)
 
-        print('Success: test_find_loop_start')
+        print("Success: test_find_loop_start")
 
 
 def main():
@@ -45,5 +44,5 @@ def main():
     test.test_find_loop_start()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

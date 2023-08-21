@@ -2,13 +2,12 @@ import unittest
 
 
 class TestUniqueChars(unittest.TestCase):
-
     def test_unique_chars(self, func):
         self.assertEqual(func(None), False)
-        self.assertEqual(func(''), True)
-        self.assertEqual(func('foo'), False)
-        self.assertEqual(func('bar'), True)
-        print('Success: test_unique_chars')
+        self.assertEqual(func(""), True)
+        self.assertEqual(func("foo"), False)
+        self.assertEqual(func("bar"), True)
+        print("Success: test_unique_chars")
 
 
 def main():
@@ -26,5 +25,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

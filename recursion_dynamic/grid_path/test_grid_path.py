@@ -2,7 +2,6 @@ import unittest
 
 
 class TestGridPath(unittest.TestCase):
-
     def test_grid_path(self):
         grid = Grid()
         self.assertEqual(grid.find_path(None), None)
@@ -19,15 +18,24 @@ class TestGridPath(unittest.TestCase):
         matrix[6][3] = 0
         matrix[7][1] = 0
         result = grid.find_path(matrix)
-        expected = [(0, 0), (1, 0), (2, 0),
-                    (2, 1), (3, 1), (4, 1),
-                    (5, 1), (5, 2), (6, 2), 
-                    (7, 2), (7, 3)]
+        expected = [
+            (0, 0),
+            (1, 0),
+            (2, 0),
+            (2, 1),
+            (3, 1),
+            (4, 1),
+            (5, 1),
+            (5, 2),
+            (6, 2),
+            (7, 2),
+            (7, 3),
+        ]
         self.assertEqual(result, expected)
         matrix[7][2] = 0
         result = grid.find_path(matrix)
         self.assertEqual(result, None)
-        print('Success: test_grid_path')
+        print("Success: test_grid_path")
 
 
 def main():
@@ -35,5 +43,5 @@ def main():
     test.test_grid_path()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

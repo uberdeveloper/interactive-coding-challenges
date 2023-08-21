@@ -1,5 +1,4 @@
 class Results(object):
-
     def __init__(self):
         self.results = []
 

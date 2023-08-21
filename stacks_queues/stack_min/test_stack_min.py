@@ -2,9 +2,8 @@ import unittest
 
 
 class TestStackMin(unittest.TestCase):
-
     def test_stack_min(self):
-        print('Test: Push on empty stack, non-empty stack')
+        print("Test: Push on empty stack, non-empty stack")
         stack = StackMin()
         stack.push(5)
         self.assertEqual(stack.peek(), 5)
@@ -19,7 +18,7 @@ class TestStackMin(unittest.TestCase):
         self.assertEqual(stack.peek(), 0)
         self.assertEqual(stack.minimum(), 0)
 
-        print('Test: Pop on non-empty stack')
+        print("Test: Pop on non-empty stack")
         self.assertEqual(stack.pop(), 0)
         self.assertEqual(stack.minimum(), 1)
         self.assertEqual(stack.pop(), 3)
@@ -29,10 +28,10 @@ class TestStackMin(unittest.TestCase):
         self.assertEqual(stack.pop(), 5)
         self.assertEqual(stack.minimum(), sys.maxsize)
 
-        print('Test: Pop empty stack')
+        print("Test: Pop empty stack")
         self.assertEqual(stack.pop(), None)
 
-        print('Success: test_stack_min')
+        print("Success: test_stack_min")
 
 
 def main():
@@ -40,5 +39,5 @@ def main():
     test.test_stack_min()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

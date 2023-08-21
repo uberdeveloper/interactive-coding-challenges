@@ -2,7 +2,6 @@ import unittest
 
 
 class TestSubTwo(unittest.TestCase):
-
     def test_sub_two(self):
         solution = Solution()
         self.assertRaises(TypeError, solution.sub_two, None)
@@ -10,7 +9,7 @@ class TestSubTwo(unittest.TestCase):
         self.assertEqual(solution.sub_two(-5, -7), 2)
         self.assertEqual(solution.sub_two(-5, 7), -12)
         self.assertEqual(solution.sub_two(5, -7), 12)
-        print('Success: test_sub_two')
+        print("Success: test_sub_two")
 
 
 def main():
@@ -18,5 +17,5 @@ def main():
     test.test_sub_two()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

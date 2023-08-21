@@ -2,11 +2,10 @@ import unittest
 
 
 class TestMaximizingXor(unittest.TestCase):
-
     def test_maximizing_xor(self):
         solution = Solution()
         self.assertEqual(solution.max_xor(10, 15), 7)
-        print('Success: test_maximizing_xor')
+        print("Success: test_maximizing_xor")
 
 
 def main():
@@ -14,5 +13,5 @@ def main():
     test.test_maximizing_xor()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

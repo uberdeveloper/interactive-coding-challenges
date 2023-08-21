@@ -2,7 +2,6 @@ import unittest
 
 
 class TestTreeLevelLists(unittest.TestCase):
-
     def test_tree_level_lists(self):
         bst = BstLevelLists(Node(5))
         bst.insert(3)
@@ -24,13 +23,13 @@ class TestTreeLevelLists(unittest.TestCase):
                 results.add_result(node)
             results_list.append(results)
 
-        self.assertEqual(str(results_list[0]), '[5]')
-        self.assertEqual(str(results_list[1]), '[3, 8]')
-        self.assertEqual(str(results_list[2]), '[2, 4, 7, 9]')
-        self.assertEqual(str(results_list[3]), '[1, 6, 10]')
-        self.assertEqual(str(results_list[4]), '[11]')
+        self.assertEqual(str(results_list[0]), "[5]")
+        self.assertEqual(str(results_list[1]), "[3, 8]")
+        self.assertEqual(str(results_list[2]), "[2, 4, 7, 9]")
+        self.assertEqual(str(results_list[3]), "[1, 6, 10]")
+        self.assertEqual(str(results_list[4]), "[11]")
 
-        print('Success: test_tree_level_lists')
+        print("Success: test_tree_level_lists")
 
 
 def main():
@@ -38,5 +37,5 @@ def main():
     test.test_tree_level_lists()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

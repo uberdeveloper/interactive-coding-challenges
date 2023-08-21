@@ -2,7 +2,6 @@ import unittest
 
 
 class TestPathExists(unittest.TestCase):
-
     def test_path_exists(self):
         nodes = []
         graph = GraphPathExists()
@@ -21,7 +20,7 @@ class TestPathExists(unittest.TestCase):
         self.assertEqual(graph.path_exists(nodes[0], nodes[0]), True)
         self.assertEqual(graph.path_exists(nodes[4], nodes[5]), False)
 
-        print('Success: test_path_exists')
+        print("Success: test_path_exists")
 
 
 def main():
@@ -29,5 +28,5 @@ def main():
     test.test_path_exists()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

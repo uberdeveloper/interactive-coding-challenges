@@ -2,7 +2,6 @@ import unittest
 
 
 class TestSolution(unittest.TestCase):
-
     def test_can_win_nim(self):
         solution = Solution()
         self.assertRaises(TypeError, solution.can_win_nim, None)
@@ -12,7 +11,7 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(solution.can_win_nim(4), False)
         self.assertEqual(solution.can_win_nim(7), True)
         self.assertEqual(solution.can_win_nim(40), False)
-        print('Success: test_can_win_nim')
+        print("Success: test_can_win_nim")
 
 
 def main():
@@ -20,5 +19,5 @@ def main():
     test.test_can_win_nim()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

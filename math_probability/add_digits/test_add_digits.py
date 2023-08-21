@@ -2,15 +2,14 @@ import unittest
 
 
 class TestAddDigits(unittest.TestCase):
-
     def test_add_digits(self, func):
         self.assertRaises(TypeError, func, None)
         self.assertRaises(ValueError, func, -1)
         self.assertEqual(func(0), 0)
         self.assertEqual(func(9), 9)
         self.assertEqual(func(138), 3)
-        self.assertEqual(func(65536), 7) 
-        print('Success: test_add_digits')
+        self.assertEqual(func(65536), 7)
+        print("Success: test_add_digits")
 
 
 def main():
@@ -25,5 +24,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
